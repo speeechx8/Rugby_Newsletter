@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,800;1,600;1,700&display=swap');
+
+*{
+    font-family: 'Rubik', sans-serif;
+ }
+
+header{
+    border: 2px solid black;
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+
+header h1{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    font-weight: 800;
+    font-size: 5em;
+}
+
+.subHeader{
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    position: relative;
+}
+
+.subHeader h3{
+    display: inline-block;
+    margin: auto;
+}
+
+main{
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "top-image  articles"
+        "events     articles"
+        "bottom-image   articles";
+}
+
+#topImage{
+    padding: 15px;
+    width: 400px;
+    height: auto;
+    grid-area: top-image;
+}
+
+#topImage img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.textBox{
+    background-color: teal;
+    padding: 5px;
+    display: block;
+    position: relative;
+    width: 400px;
+    font-weight: 400;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.textBox h2{
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+.textBox1{
+    grid-area: events;
+}
+
+.textBox2{
+    grid-area: articles;
+}
+
+.events{
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+}
+
+.events li{
+    padding: 5px;
+}
+
+.logo{
+    display: inline-block;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+#bottomImage{
+    padding: 15px;
+    grid-area: bottom-image;
+}
+
+#bottomImage img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
